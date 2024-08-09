@@ -1,0 +1,102 @@
+/* Para reiniciar */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Cuerpo de la pagina */
+
+body{
+background-image: url('fondopagina.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+/* El titulo  */
+#title {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgray;
+    opacity: .6;
+    text-align: center;
+    font-size: 350%;
+}
+/* Cosas Sobre mi */
+#aboutme {
+    margin-left: 16%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* Imagenes en la pagina */
+.image img{
+ position: relative;
+ width: 230px;
+ height: 230px;
+ clip-path: circle(50% at center);
+ margin-top: -10%;
+}
+img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 15%;
+    
+}
+
+/* Tercer parte del cuerpo de mi pagina*/
+.motivation h3{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin-left: 15%;
+}
+/* Estilo a las distintas partes del cuerpo de mi pagina: a todos los div, luego a los parrafos dentro */
+div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+
+}
+
+div p{
+    background-color: whitesmoke;
+    opacity: .7;
+    width: 30%;
+    height: 30%;
+    margin-left: 7%;
+    text-align: center;
+}
+/* Estilo de un parrafo en una clase, no uso el selector p ya que solo quiero modificar este parrafo exactmente */
+.media {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: whitesmoke;
+   opacity: .7;
+   width: 100%;
+   text-align: center;
+   font-size: 120%;
+}
+
+.social {
+    margin-left: 1%;
+    text-align: center;
+    font-size: 180%;
+}
+
+/* Estilo mediante a los elementos de una lista de iconos, y un parrafo */
+#likes li{
+    background-color: whitesmoke;
+    opacity: .7;
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    margin-right: 85%;
+    margin-left: 85%;
+    font-size: 150%;
+
+}
+
+#likes p{
+    text-align: left;
+    margin-left: 83%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 105%;
+}
