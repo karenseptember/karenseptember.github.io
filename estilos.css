@@ -1,16 +1,9 @@
-/* Para reiniciar */
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
 /* Cuerpo de la pagina */
-
 body{
 background-image: url('fondopagina.jpg');
 background-size: cover;
 background-repeat: no-repeat;
+
 }
 /* El titulo  */
 #title {
@@ -20,67 +13,65 @@ background-repeat: no-repeat;
     opacity: .6;
     text-align: center;
     font-size: 350%;
+
 }
 /* Cosas Sobre mi */
 #aboutme {
-    margin-left: 16%;
+    padding-left: 2.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
-
-
+ 
 
 /* Imagenes en la pagina */
-.image img{
- position: relative;
+.image{
  width: 230px;
  height: 230px;
  clip-path: circle(50% at center);
- margin-top: -10%;
+ 
 }
-img {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin-left: 15%;
-    
+/* Tercer parte del cuerpo de mi pagina*/
+#motivation{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin-left: 7em;
 }
 
-/* Tercer parte del cuerpo de mi pagina*/
-.motivation h3{
-font-family:Verdana, Geneva, Tahoma, sans-serif;
-margin-left: 15%;
+.img-zane{
+height: 10em;
+margin-left: 5.5em;
+clip-path: circle(50% at center);
 }
 /* Estilo a las distintas partes del cuerpo de mi pagina: a todos los div, luego a los parrafos dentro */
-div{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
 
-}
-
-div p{
+.text{
     background-color: whitesmoke;
     opacity: .7;
-    width: 30%;
-    height: 30%;
-    margin-left: 7%;
-    text-align: center;
+    width: 70%;
+    padding: 1em;
+    text-align:justify;
+    border-radius: 20px;
+    line-height: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+ 
 /* Estilo de un parrafo en una clase, no uso el selector p ya que solo quiero modificar este parrafo exactmente */
 .media {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    background-color: whitesmoke;
    opacity: .7;
    width: 100%;
+   height: 2em;
    text-align: center;
    font-size: 120%;
+   padding: 0.2em;
 }
-
 .social {
-    margin-left: 1%;
+    
     text-align: center;
-    font-size: 180%;
 }
-
+a{
+    padding: 0.5em;
+}
 /* Estilo mediante a los elementos de una lista de iconos, y un parrafo */
 #likes li{
     background-color: whitesmoke;
@@ -91,7 +82,6 @@ div p{
     margin-right: 85%;
     margin-left: 85%;
     font-size: 150%;
-
 }
 
 #likes p{
@@ -99,4 +89,93 @@ div p{
     margin-left: 83%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 105%;
+}
+img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 15%;
+
+}
+#motive{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 4em;
+    font-weight: bold;
+    font-size: 2em;
+}
+.img-java{
+width: 27em;
+height: 20em;
+margin-left: 8em;
+border-radius: 20px;
+}
+
+/*MEDIDA RESPONSIVE PARA CELULAR */
+
+@media only screen and (max-width: 767px) {
+    .img-java{
+width: 20em;
+margin-left: 1em;
+padding-right: 0%;
+    }
+     
+.text{
+ margin-left: 7em;
+ width: fit-content;
+
+}
+#mvd{
+    margin-left: -0.2em;
+    width: fit-content;
+}
+#motive{
+    font-size: 1.3em;
+    width: fit-content;
+    margin-left: 1em;
+}
+#title{
+    font-size: 2em;
+
+}
+#motivation{
+margin-left: -7em;
+width: fit-content;}
+.img-zane{
+    margin-left: 2.9em;
+    padding: 1em;
+    clip-path: none;
+}
+}
+/*MEDIDA RESPONSIVE PARA TABLET*/
+@media only screen and (min-width: 768px) and (max-width:1365px){
+    #motivation{
+    margin-left: 0em;
+    width: fit-content;}
+        
+    .img-zane{
+margin-left: 15em;          }
+    .text{
+    width: fit-content;
+}#title{
+    font-size: 3em;
+
+}#aboutme {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+     margin-left: 6em;
+}.image{
+   margin-left: 15em;
+}
+}
+@media only screen and (min-width: 1366px) and (max-width:1399px){
+#motive{
+    width: 15em;
+    margin-left: 3em;
+}
+.img-zane{
+    margin-left: 4em;
+}
+.img-java{
+    margin-left: 6em;
+}
 }
